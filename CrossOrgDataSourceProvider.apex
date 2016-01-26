@@ -13,7 +13,6 @@ global class CrossOrgDataSourceProvider extends DataSource.Provider {
      **/
     override global List<DataSource.AuthenticationCapability> getAuthenticationCapabilities() {
         List<DataSource.AuthenticationCapability> capabilities = new List<DataSource.AuthenticationCapability>();
-        capabilities.add(DataSource.AuthenticationCapability.BASIC);
         capabilities.add(DataSource.AuthenticationCapability.OAUTH);
         return capabilities;
     }
